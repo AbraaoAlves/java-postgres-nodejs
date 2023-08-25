@@ -7,9 +7,9 @@
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	"features": {
     "ghcr.io/devcontainers/features/node:1": {
-      "version": "lts"
+      "version": "latest"
     },
-    "ghcr.io/devcontainers/features/postgresql:1": {
+    "ghcr.io/itsmechlark/features/postgresql:1": {
       "version": "latest"
     }
   },
