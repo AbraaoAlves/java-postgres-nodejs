@@ -21,11 +21,11 @@
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// This can be used to network with other containers or with the host.
-	// "forwardPorts": [5432],
+	"forwardPorts": [8081],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "java -version & psql --version && node -v && mvn -version",
-
+	"postCreateCommand": "java -version && psql --version  && node -v && mvn -version && sudo /etc/init.d/postgresql start",  
+  
 	// Configure tool-specific properties.
 	"customizations": {
     "vscode": {
