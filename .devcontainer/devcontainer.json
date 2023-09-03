@@ -25,7 +25,8 @@
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	"postCreateCommand": "java -version && psql --version  && node -v && mvn -version && sudo /etc/init.d/postgresql start",  
-  
+  // exec `createdb testdb` from first time to create db 
+
 	// Configure tool-specific properties.
 	"customizations": {
     "vscode": {
